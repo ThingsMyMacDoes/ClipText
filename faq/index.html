@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — ClipText</title>
+<link rel="stylesheet" href="/ClipText/style.css">
+</head>
+<body>
+<header><nav aria-label="Main"><a href="/ClipText/">ClipText</a><a href="/ClipText/support/">Support</a><a href="/ClipText/faq/">FAQ</a><a href="/ClipText/privacy/">Privacy</a><a href="/ClipText/terms/">Terms</a></nav></header>
+<main>
+<h1 id="cliptext-frequently-asked-questions">ClipText — Frequently Asked Questions</h1>
+<p><em>The same answers are available inside the app: right-click the menu bar icon → <strong>Help &amp; FAQ…</strong>. Keep this file and <code>ClipText/HelpWindow.swift</code> in step.</em></p>
+<h3 id="what-does-cliptext-do">What does ClipText do?</h3>
+<p>It copies text from any area of your Mac's screen. You select an area, ClipText recognises the text in it, and puts the text on your clipboard.</p>
+<h3 id="how-do-i-start-a-capture">How do I start a capture?</h3>
+<p>Click the menu bar icon, press <strong>⇧⌘2</strong> (Shift-Command-2) from any app, or choose <strong>Capture Text</strong> from the right-click menu. Then drag a box around the text. Press <strong>Space</strong> to capture a whole window instead, or <strong>Esc</strong> to cancel.</p>
+<h3 id="can-i-capture-a-whole-window">Can I capture a whole window?</h3>
+<p>Yes. While the crosshairs are showing, press <strong>Space</strong>. The pointer becomes a camera and the window under it is highlighted. Move the pointer to the window you want and click it. ClipText reads all the text in that window and copies it to the clipboard.</p>
+<p>If you change your mind, press <strong>Space</strong> again to switch back to the crosshairs and drag a box instead, or press <strong>Esc</strong> to cancel the capture completely. Nothing is captured and your clipboard stays as it was.</p>
+<h3 id="does-cliptext-upload-my-screen-or-text-anywhere">Does ClipText upload my screen or text anywhere?</h3>
+<p>No. Text recognition runs on your Mac using Apple's Vision technology. ClipText has no internet access: its macOS sandbox doesn't allow network connections. The <strong>Privacy Policy</strong> and <strong>Support</strong> menu items open our website in your browser; ClipText itself sends nothing. See our <a href="https://thingsmymacdoes.github.io/ClipText/privacy">Privacy Policy</a>.</p>
+<h3 id="does-cliptext-keep-a-history-of-what-i-captured">Does ClipText keep a history of what I captured?</h3>
+<p>No. ClipText saves no captures and no files. It only remembers two settings: whether to show the text preview, and that you've already seen the welcome window. Once you copy something else, the captured text is gone from your clipboard.</p>
+<h3 id="do-i-need-an-account">Do I need an account?</h3>
+<p>No. There are no accounts and no sign-in.</p>
+<h3 id="why-does-cliptext-need-screen-recording-permission">Why does ClipText need Screen Recording permission?</h3>
+<p>macOS requires this permission for any app that reads what's on screen. ClipText only looks at the area you select, and only when you start a capture. Turn it on in <strong>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</strong>. It may be listed as <strong>ClipText</strong> or <strong>screencapture</strong>.</p>
+<h3 id="which-macs-and-macos-versions-are-supported">Which Macs and macOS versions are supported?</h3>
+<p>Macs running macOS 27 or later.</p>
+<h3 id="is-cliptext-available-for-iphone-or-ipad">Is ClipText available for iPhone or iPad?</h3>
+<p>No, ClipText is a Mac app only.</p>
+<h3 id="which-languages-can-it-recognise">Which languages can it recognise?</h3>
+<p>ClipText detects the language of the text automatically, using the languages supported by Apple's Vision technology. Accuracy can vary between languages, so proofread the results.</p>
+<h3 id="which-languages-is-the-app-itself-available-in">Which languages is the app itself available in?</h3>
+<p>English and French. ClipText follows the language set in <strong>System Settings → General → Language &amp; Region</strong>. You can also choose a language for ClipText only, under <strong>Applications</strong> in the same settings pane.</p>
+<h3 id="can-it-read-handwriting">Can it read handwriting?</h3>
+<p>It isn't designed for handwriting. Clear printed or on-screen text works best.</p>
+<h3 id="does-cliptext-change-my-clipboard">Does ClipText change my clipboard?</h3>
+<p>Only when text is found: a successful capture replaces your clipboard contents with the recognised text. If no text is found or a capture fails, ClipText puts back what you had copied before. Cancelling with Esc leaves your clipboard untouched.</p>
+<h3 id="why-does-cliptext-read-my-clipboard">Why does ClipText read my clipboard?</h3>
+<p>macOS's screenshot tool hands the image to ClipText through the clipboard. Before each capture, ClipText keeps a temporary copy of your clipboard in memory, so it can put it back if no text is found. The copy is discarded when the capture ends and is never saved or sent anywhere.</p>
+<h3 id="can-i-hide-the-copied-text-from-the-on-screen-message">Can I hide the copied text from the on-screen message?</h3>
+<p>Yes. Right-click the menu bar icon and turn off <strong>Show Text Preview</strong>. The message then only says "Text copied to clipboard". This is useful when sharing your screen.</p>
+<h3 id="can-i-change-the-keyboard-shortcut">Can I change the keyboard shortcut?</h3>
+<p>Not in this version. The shortcut is <strong>⇧⌘2</strong>.</p>
+<h3 id="does-cliptext-start-automatically-when-i-log-in">Does ClipText start automatically when I log in?</h3>
+<p>No. To have it start at login, add it yourself in <strong>System Settings → General → Login Items</strong>.</p>
+<h3 id="how-do-i-quit-cliptext">How do I quit ClipText?</h3>
+<p>Right-click the menu bar icon and choose <strong>Quit</strong>.</p>
+<h3 id="is-cliptext-accessible-with-voiceover">Is ClipText accessible with VoiceOver?</h3>
+<p>Yes. The menu bar icon has a VoiceOver label ("Capture Text"), area selection uses macOS's own screenshot tool, and confirmation messages are announced by VoiceOver. You can also start a capture with the keyboard shortcut.</p>
+<h3 id="how-do-i-contact-you">How do I contact you?</h3>
+<p>Right-click the menu bar icon and choose <strong>Support</strong>, or see <a href="/ClipText/support/#contact-cliptext-support">Contact Support</a>.</p>
+</main>
+<footer>
+<nav aria-label="Legal"><a href="/ClipText/privacy/">Privacy Policy</a> · <a href="/ClipText/terms/">Terms</a> · <a href="/ClipText/disclaimer/">Disclaimer</a> · <a href="/ClipText/support/">Support</a></nav>
+</footer>
+</body>
+</html>
